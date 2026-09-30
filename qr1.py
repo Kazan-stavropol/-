@@ -1,11 +1,7 @@
 import qrcode
 from PIL import Image, ImageDraw, ImageFont
 
-# =========================
-# НАСТРОЙКИ
-# =========================
-
-URL = "https://kazan-stavropol.ru/"   # <-- сюда вставь свой сайт
+URL = "https://kazan-stavropol.github.io/-/"
 
 OUTPUT = "qr_kazan.png"
 
