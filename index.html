@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- Основные данные сайта -->
+  <title>Казан — кафе и кофейня</title>
+  <meta name="description"
+    content="Кафе «Казан»: завтраки, кофе, десерты и уютная атмосфера. Меню, фотографии, видео, адрес и бронирование столика.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Казан — кафе и кофейня">
+  <meta property="og:description" content="Завтраки, кофе, десерты и атмосфера, в которой хочется задержаться.">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="theme-color" content="#fbf8f2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Казан",
+    "servesCuisine": "Кофе, завтраки, десерты",
+    "description": "Кафе с завтраками, кофе и десертами"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hdr" id="hdr">
+    <div class="wrap in">
+      <a href="#top" class="logo" id="logo" aria-label="На главную">Казан</a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#top">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="menu.html">Меню</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#video">Видео</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#rating">Отзывы</a>
+      </nav>
+
+      <a href="#booking" class="btn btn-fill">Забронировать</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="panel" id="panel">
+    <nav id="pnav" aria-label="Мобильная навигация">
+      <a href="#top" data-close>Главная</a>
+      <a href="#about" data-close>О нас</a>
+      <a href="menu.html" data-close>Меню</a>
+      <a href="#gallery" data-close>Галерея</a>
+      <a href="#video" data-close>Видео</a>
+      <a href="#contacts" data-close>Контакты</a>
+      <a href="#rating" data-close>Отзывы</a>
+    </nav>
+    <a href="#booking" class="btn btn-fill" data-close>Забронировать столик</a>
+  </div>
+
+  <main id="top">
+
+    <!-- =========================================================
+         ГЛАВНЫЙ ЭКРАН
+         Меняйте название, подзаголовок, видео и poster прямо здесь.
+         ========================================================= -->
+    <section class="hero" aria-label="Главный экран" id="hero">
+      <div class="hero-media hero-fb" style="background:url('images/hero-poster.jpg') center/cover"></div>
+
+      <video autoplay muted loop playsinline preload="metadata" poster="images/hero-poster.jpg" aria-hidden="true">
+        <source src="video/video1.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-c">
+        <div class="wrap">
+          <h1 class="rise">Казан</h1>
+          <p class="rise">Кофе, завтраки и неспешные разговоры</p>
+          <div class="cta rise">
+            <a class="btn btn-light" href="menu.html">Посмотреть меню</a>
+            <a class="btn btn-ghost" href="#booking">Забронировать столик</a>
+          </div>
+        </div>
+      </div>
+
+      <span class="cue" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         О НАС
+         ========================================================= -->
+    <section id="about" aria-labelledby="about-t">
+      <div class="wrap">
+        <div class="about">
+          <div class="txt">
+            <h2 class="h2" id="about-t" data-r>О нас</h2>
+
+            <p class="lead" data-r>
+              Место, куда приходят за чашкой кофе, а остаются на весь вечер.
+            </p>
+
+            <p class="mute" data-r style="max-width:52ch">
+              Вкусная еда, уютная атмосфера и приятные моменты — всё, чтобы ваш день стал немного лучше.
+            </p>
+
+            <a class="btn btn-line" href="#atmosphere" data-r>Заглянуть внутрь</a>
+          </div>
+
+          <div class="about-img" data-r>
+            <div class="ph a">
+              <img src="image/vid-snaruji.jpeg" width="900" height="1125" alt="Главный зал кафе" loading="lazy"
+                decoding="async" data-placeholder-tone="coffee" data-placeholder-label="Фото: главный зал">
+            </div>
+
+            <div class="ph b">
+              <img src="image/medal.jpeg" width="600" height="600" alt="Деталь интерьера" loading="lazy"
+                decoding="async" data-placeholder-tone="olive" data-placeholder-label="Фото: деталь">
+            </div>
+          </div>
+        </div>
+
+        <dl class="facts" data-r>
+          <div>
+            <dt>2024</dt>
+            <dd>Открыли двери</dd>
+          </div>
+          <div>
+            <dt>Specialty</dt>
+            <dd>Отборное зерно</dd>
+          </div>
+          <div>
+            <dt>Каждый день</dt>
+            <dd>Свежие завтраки и выпечка</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         АТМОСФЕРА
+         Все фотографии меняются здесь через src.
+         ========================================================= -->
+    <section id="atmosphere" class="atmo" aria-labelledby="atmo-t">
+      <div class="wrap">
+        <div class="atmo-head">
+          <h2 class="h2" id="atmo-t" data-r>Атмосфера</h2>
+          <p class="mute" data-r>
+            Свет, дерево, запах свежего кофе — всё, что вы почувствуете,
+            переступив порог.
+          </p>
+        </div>
+
+        <div class="atmo-grid">
+          <div class="ph g1" data-r>
+            <img src="image/atmosfera-kazan.jpeg" width="1400" height="1000" alt="Общий вид зала" loading="lazy"
+              decoding="async" data-placeholder-tone="butter" data-placeholder-label="Фото: зал">
+          </div>
+
+          <div class="ph g2" data-r>
+            <img src="image/atm-kazan2.jpeg" width="900" height="600" alt="Барная стойка" loading="lazy"
+              decoding="async" data-placeholder-tone="coffee" data-placeholder-label="Фото: барная стойка">
+          </div>
+
+          <div class="ph g3" data-r>
+            <img src="image/atm-kazan3.jpeg" width="700" height="1000" alt="Столик у окна" loading="lazy"
+              decoding="async" data-placeholder-tone="sage" data-placeholder-label="Фото: у окна">
+          </div>
+
+          <div class="ph g4" data-r>
+            <img src="image/coffee.jpeg" width="500" height="500" alt="Детали интерьера" loading="lazy" decoding="async"
+              data-placeholder-tone="peach" data-placeholder-label="Фото: детали">
+          </div>
+
+          <div class="ph g5" data-r>
+            <img src="image/sneg-atm.jpeg" width="800" height="500" alt="Тёплый свет" loading="lazy" decoding="async"
+              data-placeholder-tone="latte" data-placeholder-label="Фото: свет">
+          </div>
+
+          <div class="ph g6" data-r>
+            <img src="image/photo.jpeg" width="700" height="500" alt="Посуда и текстиль" loading="lazy" decoding="async"
+              data-placeholder-tone="olive" data-placeholder-label="Фото: посуда">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ПОПУЛЯРНОЕ
+         ========================================================= -->
+    <section id="popular" aria-labelledby="pop-t">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="pop-t" data-r>Любимое гостей</h2>
+          <a class="btn btn-line" href="menu.html">Посмотреть всё меню</a>
+        </div>
+
+        <div class="pop">
+          <article data-r>
+            <div class="ph">
+              <img src="image/blyud+kombo/plov-lavash(n).png" width="800" height="1000" alt="Сырники" loading="lazy"
+                decoding="async" data-placeholder-tone="butter" data-placeholder-label="Фото: блюдо">
+            </div>
+            <h3>Плов в лаваше</h3>
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/blyud+kombo/samsa.jpeg" width="800" height="1000" alt="Тост с авокадо" loading="lazy"
+                decoding="async" data-placeholder-tone="olive" data-placeholder-label="Фото: блюдо">
+            </div>
+            <h3>Самса</h3>
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/blyud+kombo/kartoshka.jpeg" width="800" height="1000" alt="Флэт уайт" loading="lazy"
+                decoding="async" data-placeholder-tone="coffee" data-placeholder-label="Фото: напиток">
+            </div>
+            <h3>Картофель по-деревенски</h3>
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/blyud+kombo/kurica-v-tandire.jpeg" width="800" height="1000" alt="Тарт с грушей" loading="lazy"
+                decoding="async" data-placeholder-tone="peach" data-placeholder-label="Фото: десерт">
+            </div>
+            <h3>Курица в тандыре</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         КОМАНДА
+         ========================================================= -->
+    <section id="team" class="team" aria-labelledby="team-t">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="team-t" data-r>Люди, которые вас встречают</h2>
+        </div>
+
+        <div class="team-row">
+          <article data-r>
+            <div class="ph">
+              <img src="image/baristi.jpeg" width="720" height="960" alt="Шеф-повар" loading="lazy" decoding="async"
+                data-placeholder-tone="peach" data-placeholder-label="Фото: сотрудник">
+            </div>
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/baristi2.jpeg" width="720" height="960" alt="Бариста" loading="lazy" decoding="async"
+                data-placeholder-tone="latte" data-placeholder-label="Фото: сотрудник">
+            </div>
+
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/koll.jpeg" width="720" height="960" alt="Кондитер" loading="lazy" decoding="async"
+                data-placeholder-tone="butter" data-placeholder-label="Фото: сотрудник">
+            </div>
+
+          </article>
+
+          <article data-r>
+            <div class="ph">
+              <img src="image/kazan.jpeg" width="720" height="960" alt="Управляющий" loading="lazy" decoding="async"
+                data-placeholder-tone="sage" data-placeholder-label="Фото: сотрудник">
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- =========================================================
+         ГАЛЕРЕЯ
+         ========================================================= -->
+    <section id="gallery" aria-labelledby="gal-t">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="gal-t" data-r>Галерея</h2>
+        </div>
+
+        <div class="gal">
+          <button data-i="0" aria-label="Открыть фото: Интерьер" data-r>
+            <img src="image/1.jpeg" width="800" height="1000" alt="Интерьер кафе" loading="lazy" decoding="async"
+              data-placeholder-tone="coffee" data-placeholder-label="Интерьер">
+          </button>
+          <button data-i="1" aria-label="Открыть фото: Блюдо" data-r>
+            <img src="image/2.jpeg" width="1000" height="700" alt="Блюдо на столе" loading="lazy" decoding="async"
+              data-placeholder-tone="butter" data-placeholder-label="Блюдо">
+          </button>
+          <button data-i="2" aria-label="Открыть фото: Деталь" data-r>
+            <img src="image/3.jpeg" width="800" height="800" alt="Деталь интерьера" loading="lazy" decoding="async"
+              data-placeholder-tone="olive" data-placeholder-label="Деталь">
+          </button>
+          <button data-i="3" aria-label="Открыть фото: Команда" data-r>
+            <img src="image/4.jpeg" width="800" height="1200" alt="Команда кафе" loading="lazy" decoding="async"
+              data-placeholder-tone="peach" data-placeholder-label="Команда">
+          </button>
+          <button data-i="4" aria-label="Открыть фото: Кофе" data-r>
+            <img src="image/5.jpeg" width="1000" height="750" alt="Чашка кофе" loading="lazy" decoding="async"
+              data-placeholder-tone="latte" data-placeholder-label="Кофе">
+          </button>
+          <button data-i="5" aria-label="Открыть фото: Зал" data-r>
+            <img src="image/6.jpeg" width="800" height="1000" alt="Зал кафе" loading="lazy" decoding="async"
+              data-placeholder-tone="sage" data-placeholder-label="Зал">
+          </button>
+          <button data-i="6" aria-label="Открыть фото: Бар" data-r>
+            <img src="image/7.jpeg" width="800" height="600" alt="Барная стойка" loading="lazy" decoding="async"
+              data-placeholder-tone="roast" data-placeholder-label="Бар">
+          </button>
+          <button data-i="7" aria-label="Открыть фото: Выпечка" data-r>
+            <img src="image/8.jpeg" width="800" height="1100" alt="Свежая выпечка" loading="lazy" decoding="async"
+              data-placeholder-tone="butter" data-placeholder-label="Выпечка">
+          </button>
+          <button data-i="8" aria-label="Открыть фото: Свет" data-r>
+            <img src="image/9.jpeg" width="1000" height="1000" alt="Тёплый свет" loading="lazy" decoding="async"
+              data-placeholder-tone="coffee" data-placeholder-label="Свет">
+          </button>
+          <button data-i="9" aria-label="Открыть фото: Десерт" data-r>
+            <img src="image/foto.jpeg" width="900" height="700" alt="Десерт" loading="lazy" decoding="async"
+              data-placeholder-tone="peach" data-placeholder-label="Десерт">
+          </button>
+          <button data-i="10" aria-label="Открыть фото: Растения" data-r>
+            <img src="image/medal.jpeg" width="800" height="1000" alt="Зелень в интерьере" loading="lazy"
+              decoding="async" data-placeholder-tone="olive" data-placeholder-label="Растения">
+          </button>
+          <button data-i="11" aria-label="Открыть фото: Стол" data-r>
+            <img src="image/atm-kazan2.jpeg" width="1000" height="650" alt="Накрытый стол" loading="lazy"
+              decoding="async" data-placeholder-tone="latte" data-placeholder-label="Стол">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="rating" class="rating-section">
+      <div class="reviews-header"> <span class="reviews-label">ОТЗЫВЫ</span>
+        <h2>Что говорят о нас гости</h2>
+        <p>Ваши впечатления — наша лучшая награда.</p>
+      </div>
+      <div class="reviews-grid">
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">Т</div>
+            <div class="review-info">
+              <span>Гость</span>
+            </div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <p class="text-otziv"> Очень вкусный плов — ароматный, сытный и приготовлен как надо. Отдельно понравилась домашняя атмосфера. Обязательно зайдём ещё!</p> <span class="review-date">12 сентября 2026</span>
+        </article>
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">М</div>
+            <div class="review-info">
+              <span>Гость</span>
+            </div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <p class="text-otziv"> Зашёл попробовать плов и остался очень доволен. Большая порция, насыщенный вкус и всё свежее. Хорошее место, чтобы вкусно поесть.</p> <span class="review-date">8 сентября 2026</span>
+        </article>
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar">К</div>
+            <div class="review-info">
+              <span>Гость</span>
+            </div>
+            <div class="rating">★★★★★</div>
+          </div>
+          <p class="text-otziv"> Очень уютное кафе с настоящей домашней атмосферой. Плов получился невероятно ароматным. Теперь это одно из моих любимых мест.</p> <span class="review-date">3 сентября 2026</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         БРОНИРОВАНИЕ
+         ========================================================= -->
+    <section id="booking" class="book" aria-labelledby="book-t">
+      <div class="wrap book-in">
+        <div>
+          <h2 class="h2" id="book-t" data-r>Забронируйте столик</h2>
+          <p data-r>Оставьте заявку — мы подтвердим бронь по телефону.</p>
+        </div>
+
+        <form class="form" id="bform" data-r novalidate>
+          <label>Имя
+            <input name="name" required autocomplete="name" placeholder="Как вас зовут">
+          </label>
+
+          <label>Телефон
+            <input name="phone" type="tel" required autocomplete="tel" placeholder="+7">
+          </label>
+
+          <label>Дата
+            <input name="date" type="date" class="data" required>
+          </label>
+
+          <label>Время
+            <input name="time" type="time" required value="19:00">
+          </label>
+
+          <label class="full">Гостей
+            <select name="guests">
+              <option>1–2</option>
+              <option selected>3–4</option>
+              <option>5–6</option>
+              <option>7 и больше</option>
+            </select>
+          </label>
+
+          <button class="btn full" type="submit">Отправить заявку</button>
+          <p class="note" id="bnote" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         КОНТАКТЫ
+         Здесь удобно менять адрес, телефон, почту, часы и соцсети.
+         ========================================================= -->
+    <section id="contacts" aria-labelledby="cont-t">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="cont-t" data-r>Как нас найти</h2>
+        </div>
+
+        <div class="cont">
+          <div data-r>
+            <p class="lead">Заходите на кофе, обед или просто погреться.</p>
+
+            <dl>
+              <div>
+                <dt>Адрес</dt>
+                <dd>г. Ставрополь ул. Шпаковская  111 к59</dd>
+              </div>
+
+              <div>
+                <dt>Телефон</dt>
+                <dd><a href="tel:+70000000000">+7 (962) 444-24-02</a></dd>
+              </div>
+
+              <div>
+                <dt>Часы работы</dt>
+                <dd>
+                  <div class="hrs">
+                    <span>Пн–Пт</span><span>10:00 -- 22:00</span>
+                    <span>Сб–Вс</span><span>10:00 -- 22:00</span>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="map" data-r>
+            <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="600" height="420" fill="var(--bg2)" />
+              <g fill="none" stroke="var(--bg)" stroke-linecap="round">
+                <path d="M-20 90 L640 60" stroke-width="18" />
+                <path d="M-20 260 L640 300" stroke-width="26" />
+                <path d="M120 -20 L160 440" stroke-width="20" />
+                <path d="M420 -20 L380 440" stroke-width="16" />
+                <path d="M-20 360 L300 190 L640 200" stroke-width="10" />
+              </g>
+              <g fill="var(--acc)" opacity=".22">
+                <rect x="190" y="105" width="150" height="110" rx="14" />
+                <rect x="450" y="320" width="120" height="80" rx="14" />
+              </g>
+              <g transform="translate(300 178)">
+                <circle r="34" fill="var(--acc)" opacity=".2" />
+                <path d="M0 26 C-18 4 -20 -6 -20 -13 a20 20 0 1 1 40 0 c0 7 -2 17 -20 39z" fill="var(--acc)" />
+                <circle cy="-13" r="7" fill="var(--bg)" />
+              </g>
+            </svg>
+
+            <div class="route">
+              <span>
+                <b>Казан</b>
+                <span class="mute" style="font-size:.85rem">г. Ставрополь, ул. Шпаковская 111 к59</span>
+              </span>
+              <a class="btn btn-fill"
+                href="https://2gis.ru/stavropol/geo/8022672491482347?m=41.920487%2C45.032286%2F16"
+                target="_blank" rel="noopener">Построить маршрут</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="wrap">
+      <div class="f-top">
+        <div>
+          <a class="logo" href="#top">Казан</a>
+          <p class="mute" style="margin-top:.6rem;max-width:30ch">
+            Кофе, завтраки и неспешные разговоры
+          </p>
+        </div>
+
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#top">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="menu.html#menu">Меню</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#rating">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li>г. Ставрополь, ул. Шпаковская  111 к59</li>
+            <li><a href="tel:+79624442402">+7 (962) 444-24-02</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Часы</h4>
+          <ul>
+            <li>Пн–Пт: 10:00 – 22:00</li>
+            <li>Сб–Вс: 10:00 – 22:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="f-big" aria-hidden="true">Казан</div>
+
+      <div class="f-bot">
+        <span>© 2026 Казан</span>
+        <span>Все права защищены</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       LIGHTBOX
+       ========================================================= -->
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр">
+    <button class="x" aria-label="Закрыть">✕</button>
+    <button class="pv" aria-label="Предыдущее">‹</button>
+    <button class="nx" aria-label="Следующее">›</button>
+    <div id="lbc"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

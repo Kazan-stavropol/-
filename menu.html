@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Меню</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hdr" id="hdr">
+    <div class="wrap in">
+      <a href="#top" class="logo" id="logo" aria-label="На главную">Казан</a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#gallery">Галерея</a>
+        <a href="index.html#video">Видео</a>
+        <a href="index.html#contacts">Контакты</a>
+        <a href="index.html#rating">Отзывы</a>
+      </nav>
+
+      <a href="#booking" class="btn btn-fill">Забронировать</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="panel" id="panel">
+    <nav id="pnav" aria-label="Мобильная навигация">
+      <a href="index.html#top" data-close>Главная</a>
+      <a href="index.html#about" data-close>О нас</a>
+      <a href="index.html#gallery" data-close>Галерея</a>
+      <a href="index.html#video" data-close>Видео</a>
+      <a href="index.html#contacts" data-close>Контакты</a>
+      <a href="index.html#rating" data-close>Отзывы</a>
+    </nav>
+    <a href="#booking" class="btn btn-fill" data-close>Забронировать столик</a>
+  </div>
+
+  <section class="menu-hero">
+
+    <div class="hero-menu">
+      <div class="hero-w">
+        <h1 class="menu-text">Добро Пожаловать к столу</h1>
+        <p class="menu-text">Вкус традиций, который собирает за одним столом</p>
+        <div class="cta rise">
+          <a href="#menu" class="btn btn-light">Посмотреть меню</a>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 9h14l-1 7a3 3 0 0 1-3 2H9a3 3 0 0 1-3-2L5 9Z" />
+              <path d="M4 9h16" />
+              <path d="M9 6h6" />
+              <path d="M10 6V4h4v2" />
+              <path d="M8 21h8" />
+            </svg>
+            <span>🥘Традиционные<br>рецепты</span>
+          </div>
+
+          <div class="feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 4C12 4 5 7 4 14c-.5 3.5 2 6 5.5 5.5C16.5 18.5 20 12 20 4Z" />
+              <path d="M4 20c3-5 6-8 11-11" />
+            </svg>
+            <span>🌿Свежие<br>ингредиенты</span>
+          </div>
+
+          <div class="feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 22c4 0 7-2.8 7-7 0-3.5-2.2-6-5-8.5.2 2.5-.7 4-2 4.8.2-3.4-1.5-6.1-4-7.3.2 3.4-3 5.2-3 9.5 0 4.2 3 7.5 7 7.5Z" />
+              <path
+                d="M9.5 17.5c0 1.7 1.1 3 2.5 3s2.5-1.3 2.5-3c0-1.4-.8-2.5-2.2-3.7.1 1.1-.2 1.8-.8 2.3-.1-1.3-.7-2.2-1.5-2.8.1 1.5-.5 2.5-.5 4.2Z" />
+            </svg>
+            <span>🔥Насыщенный<br>вкус</span>
+          </div>
+
+          <div class="feature">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.7"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.8 8.8c0 5-8.8 10.2-8.8 10.2S3.2 13.8 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z" />
+            </svg>
+            <span>❤️Тепло и<br>уют</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <span class="cue" aria-hidden="true"></span>
+  </section>
+  <!-- Категории -->
+
+  <nav class="categories" id="menu">
+
+    <button class="category-btn active" data-section="main">
+      Основные блюда
+    </button>
+
+    <button class="category-btn" data-section="drinks">
+      Напитки
+    </button>
+
+    <button class="category-btn" data-section="third">
+      Комбо
+    </button>
+
+  </nav>
+
+
+  <!-- ========================= -->
+  <!-- ОСНОВНЫЕ БЛЮДА -->
+  <!-- ========================= -->
+
+  <main id="main" class="menu-section active">
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/shurpa.jpeg" alt="Блюдо №1">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Шурпа</h2>
+
+        <p class="card-description">
+          Краткое описание блюда и его основных ингредиентов.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">400 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/plov-g,b.jpeg" alt="Блюдо №2">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Плов (говядина)</h2>
+
+        <p class="card-description">
+          Свежие продукты, авторская подача и насыщенный вкус.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">400 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/plov-g,b.jpeg" alt="Блюдо №3">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Плов (баранина)</h2>
+
+        <p class="card-description">
+          Нежное блюдо с ароматными специями и свежими овощами.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">450 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="badge">Новинка</div>
+
+      <img class="card-image" src="image/blyud+kombo/plov-lavash(n).png" alt="Блюдо №4">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Плов в лаваше (говядина)</h2>
+
+        <p class="card-description">
+          Фирменное блюдо ресторана с особым соусом.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">400 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="badge">Новинка</div>
+
+      <img class="card-image" src="image/blyud+kombo/plov-lavash(n).png" alt="Блюдо №5">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Плов в лаваше (баранина)</h2>
+
+        <p class="card-description">
+          Домашний вкус в современной ресторанной подаче.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">450 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/manti.jpeg" alt="Блюдо №6">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Манты</h2>
+
+        <p class="card-description">
+          Сытное блюдо с овощами и фирменной заправкой.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">400 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/kurica-v-tandire.jpeg" alt="Блюдо №7">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Курица в тандыре</h2>
+
+        <p class="card-description">
+          Насыщенный вкус и свежие ингредиенты.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">200 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/samsa.jpeg" alt="Блюдо №8">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Самса</h2>
+
+        <p class="card-description">
+          Лёгкое и ароматное блюдо для любого времени дня.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">200 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/kartoshka.jpeg" alt="Блюдо №9">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Картофель по-деревенски</h2>
+
+        <p class="card-description">
+          Свежий салат с сезонными продуктами.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">250 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/solone.jpeg" alt="Блюдо №10">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Соленья</h2>
+
+        <p class="card-description">
+          Горячее блюдо с хрустящей корочкой.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">250 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/salat.jpeg" alt="Блюдо №11">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Салат овощной</h2>
+
+        <p class="card-description">
+          Авторское блюдо с фирменными ингредиентами.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">250 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/adjika-sous.jpg" alt="Блюдо №12">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Аджика/Соус</h2>
+
+        <p class="card-description">
+          Финальный акцент меню — блюдо с насыщенным вкусом.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">250 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- ========================= -->
+  <!-- НАПИТКИ -->
+  <!-- ========================= -->
+
+  <main id="drinks" class="menu-section drinks">
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Напитки Добрый (0,3л/0,5л)</h2>
+
+        <p class="card-description">
+          Домашний освежающий лимонад.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">130/150 ₽</span>
+          <span class="weight">0,3/0,5 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Burn</h2>
+
+        <p class="card-description">
+          Свежесваренный ароматный кофе.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">250 ₽</span>
+          <span class="weight">0,449 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">RICH Спритц красный апельсин</h2>
+
+        <p class="card-description">
+          Ароматный чай на выбор.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">₽</span>
+          <span class="weight">0,33 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">RICH TEA</h2>
+
+        <p class="card-description">
+          Газированная или негазированная.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">₽</span>
+          <span class="weight">0,5 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Соки и нектары добрый</h2>
+
+        <p class="card-description">
+          Натуральный сок из апельсинов.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">150 ₽</span>
+          <span class="weight">0,3 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="card-content">
+
+        <h2 class="card-title">PULPY</h2>
+
+        <p class="card-description">
+          Освежающий холодный чай.
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">₽</span>
+          <span class="weight">0,45 л</span>
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- ========================= -->
+  <!-- ТРЕТИЙ РАЗДЕЛ -->
+  <!-- ========================= -->
+
+  <main id="third" class="menu-section">
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/samsa-kombo.PNG" alt="Позиция №1">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Самса +напитки добрый 0,5л</h2>
+
+        <p class="card-description">
+          Так вкусно вместе !
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">320 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <img class="card-image" src="image/blyud+kombo/plov-kombo.PNG" alt="Позиция №2">
+
+      <div class="card-content">
+
+        <h2 class="card-title">Плов в лаваше +напитки добрый 0,5л</h2>
+
+        <p class="card-description">
+          Так вкусно вместе !
+        </p>
+
+        <div class="card-bottom">
+          <span class="price">500 ₽</span>
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer id="footer">
+    <div class="wrap">
+      <div class="f-top">
+        <div>
+          <a class="logo" href="#top">Казан</a>
+          <p class="mute" style="margin-top:.6rem;max-width:30ch">
+            Кофе, завтраки и неспешные разговоры
+          </p>
+        </div>
+
+        <div>
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="index.html#top">Главная</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#gallery">Галерея</a></li>
+            <li><a href="index.html#video">Видео</a></li>
+            <li><a href="index.html#contacts">Контакты</a></li>
+            <li><a href="index.html#rating">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li>г. Ставрополь, ул. Шпаковская 111 к59</li>
+            <li><a href="tel:+79624442402">+7 (962) 444-24-02</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Часы</h4>
+          <ul>
+            <li>Пн–Пт: 10:00 – 22:00</li>
+            <li>Сб–Вс: 10:00 – 22:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="f-big" aria-hidden="true">Казан</div>
+
+      <div class="f-bot">
+        <span>© 2026 Казан</span>
+        <span>Все права защищены</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
